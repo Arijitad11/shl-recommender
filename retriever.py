@@ -17,8 +17,8 @@ log = logging.getLogger(__name__)
 
 # ── Try to load heavy deps; fall back gracefully ─────────────────────────────
 
-    _HEAVY = False
-    log.warning("sentence-transformers or faiss not available; using keyword fallback")
+_HEAVY = False
+log.warning("sentence-transformers or faiss not available; using keyword fallback")
 
 
 # ── Keyword retriever (always available) ─────────────────────────────────────
