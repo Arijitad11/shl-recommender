@@ -16,13 +16,7 @@ from typing import Optional
 log = logging.getLogger(__name__)
 
 # ── Try to load heavy deps; fall back gracefully ─────────────────────────────
-try:
-    import numpy as np
-    import faiss
-    from sentence_transformers import SentenceTransformer
 
-    _HEAVY = True
-except ImportError:
     _HEAVY = False
     log.warning("sentence-transformers or faiss not available; using keyword fallback")
 
