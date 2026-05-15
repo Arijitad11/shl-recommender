@@ -16,6 +16,9 @@ import os
 from contextlib import asynccontextmanager
 from typing import Literal
 
+import sys
+print("Python version:", sys.version, flush=True)
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
